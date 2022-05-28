@@ -7,7 +7,7 @@ w3 = Web3(Web3.HTTPProvider(config.INFURA_URL))
 
 @app.route("/")
 def index():
-    return "Etherbrowse"
+    return render_template("index.html")
 
 @app.route("/tx/<hash>")
 def transaction(hash):
